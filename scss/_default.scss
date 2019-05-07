@@ -162,7 +162,8 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgba($color: $main_color, $alpha: .5);
+    -webkit-box-shadow: 0 0 10px rgba($color: $main_color, $alpha: .5);
+            box-shadow: 0 0 10px rgba($color: $main_color, $alpha: .5);
     -webkit-transform: translateY(100px);
             transform: translateY(100px);
 
