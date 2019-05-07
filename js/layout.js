@@ -36,6 +36,17 @@ $('.news-carousel').owlCarousel({
     "<i class='mdi mdi-chevron-left'></i>",
     "<i class='mdi mdi-chevron-right'></i>" 
   ],
+  responsive: {
+    0: {
+      items:1,
+    },
+    576: {
+      items:2
+    },
+    768: {
+      items:3
+    },
+  }
 });
 
 // XZOOM
@@ -46,6 +57,7 @@ $('.xzoom-carousel').owlCarousel({
   margin:10,
   nav: true,
   items: 4,
+  autoWidth: true,
   navText: [
     "<i class='mdi mdi-chevron-left'></i>",
     "<i class='mdi mdi-chevron-right'></i>" 
@@ -125,6 +137,7 @@ $(document).ready(() => {
   $('.search-btn i').click(function() {
     $('.search').toggleClass('active');
     $(this).toggleClass('mdi-magnify mdi-close');
+    $('.search input').focus();
   });
 
   if (windowWidth < 1200) {
